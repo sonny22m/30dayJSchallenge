@@ -1,23 +1,24 @@
 
     html {
       box-sizing: border-box;
-      background:url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
-      background-size:cover;
-      min-height:100vh;
-      display:flex;
+      background: url('Background_Maps.jpg') center no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       font-family: Futura,"Trebuchet MS",Arial,sans-serif
     }
     *, *:before, *:after {box-sizing: inherit; }
-
-    svg {
-      fill:white;
-      background: rgba(0,0,0,0.1);
+    
+    img {
+      width: 200px;
+      height: auto;
+      fill: white;
+      background: rgba(0,0,0,0.3);
       padding: 20px;
       border-radius: 50%;
-      width:200px;
       margin-bottom: 50px;
     }
 
@@ -64,15 +65,24 @@
     }
 
     .plates input:checked + label:before {
-      content: '🌮';
+      content: '🌎';
     }
 
     .add-items {
       margin-top: 20px;
     }
 
-    .add-items input {
-      padding:10px;
-      outline:0;
-      border:1px solid rgba(0,0,0,0.1);
+    .add-items input, .options {
+      padding: 10px;
+      outline: 0;
+      border: 1px solid rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    button {
+      margin: 0 2px;
     }
